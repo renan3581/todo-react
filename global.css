@@ -1,0 +1,53 @@
+:root{
+    /*Background*/
+    --bg: #262626  ;
+    --bg-top: #1A1A1A;
+    --bg-input: #333333;
+    --bg-counter: #333333;
+    --bg-button-new-item: #1E6F9F;
+    --bg-item-completed: #5E60CE;
+
+    /*Text*/
+    --text: #808080;
+    --text-input-placeholder: #808080;
+    --text-input-user: #e2e2e2;
+    --button-new-item: #fff;
+    --todo-counter: #4EA8DE;
+    --todo-completed-counter:#8284FA;
+    --todo-list-item: #F2F2F2;
+    --todo-counter-number: #D9D9D9;
+
+    /*Border*/
+    --input-border: #0D0D0D;
+
+    /*Others*/
+    --delete-hover:#E25858;
+    
+}
+
+
+:focus{
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--todo-counter);
+    
+}
+
+
+*{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 1rem;
+    
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+

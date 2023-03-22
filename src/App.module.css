@@ -1,0 +1,151 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12.5rem;
+  gap: 0.5rem;
+  background-color: var(--bg-top);
+  
+  
+}
+
+.header h1,.header span{
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--todo-counter);
+}
+
+.header span{
+  color: var(--todo-completed-counter);
+}
+
+.header img{
+  width: 54px;
+  height: 53px;
+}
+
+.formWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 736px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -25px;
+  gap: 0.5rem;
+  width: 100%
+}
+
+form textarea {
+  width: 40rem;
+  padding: 0.5rem;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: var(--bg-input);
+  resize: none;
+  color: white;
+  font-size: 1.125rem;
+  max-height: 54px;
+  
+}
+
+textarea::placeholder{
+  position: relative;
+  top: 5px;
+  font-size: 18px;
+  align-self: center;
+  justify-self:center;
+}
+
+
+form button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 54px;
+  width: 5.625rem;
+  padding: 1.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  background-color: var(--bg-button-new-item);
+  color: var(--button-new-item);
+  cursor: pointer;
+}
+
+
+.todo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.todoHeader{
+  display: flex;
+  justify-content: space-between;
+  width: 45.5rem;
+  gap: 0.5rem;
+}
+
+.todoHeader p{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.todoHeader p.created{
+  color: var(--todo-counter);
+}
+
+.todoHeader p.concluded{
+  color: var(--todo-completed-counter);
+}
+
+.todoHeader span{
+  border: 1px solid var(--input-border);
+  border-radius: 999px;
+  padding: 0.25rem 0.5rem ;
+  background-color: var(--bg-input);
+  color: var(--todo-list-item);
+  font-weight: 700;
+}
+
+.todoItemsList{
+  margin-top: 1.5rem;
+  border-top:1px solid var(--bg-counter);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 45.375rem;
+  
+}
+
+
+.nothingTodo{
+  display: flex;
+  height: 244px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nothingTodo svg {
+  margin-bottom: 20px;
+}
+
+
+.nothingTodo strong{
+  color: var(--text-input-user);
+}

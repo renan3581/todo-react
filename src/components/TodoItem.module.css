@@ -1,0 +1,53 @@
+.todoItem{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30px 1fr 50px;
+    min-height: 4.5rem;
+    padding: 1rem .625rem;
+    border: 1px solid var(--bg-counter);
+    border-radius: 8px;
+    background-color: var(--bg-input);
+    color: var(--todo-list-item);
+    gap: 1rem;
+    
+    
+}
+
+.todoItem p{
+    display: flex;
+    flex: 1;
+    word-wrap: break-word;  
+}
+
+.todoItem .todoItemCheck{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #4EA8DE;
+    border-radius: 9999px ;
+    cursor: pointer;
+    color: transparent;
+}
+
+
+.todoItem .todoItemCheck.completed{
+    background-color: var(--bg-item-completed);
+    border: 1px solid var(--bg-item-completed);
+    color: white;
+
+}
+
+.todoItem button{
+    background-color: transparent;
+    border: none;
+    color: var(--text-input-placeholder);
+    cursor: pointer ;
+}
+
+.todoItem button:hover{
+    background-color: transparent;
+    border: none;
+    color: var(--delete-hover);
+}
