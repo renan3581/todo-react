@@ -2,6 +2,7 @@ import {useState} from "react"
 import styles from './TodoItem.module.css';
 import { Check,Trash } from '@phosphor-icons/react'
 
+
 interface TodoItemProps{
     todoText: string;
     itemsCompleted: number;
@@ -30,7 +31,7 @@ export function TodoItem({todoText,  itemsCompleted, setItemsCompleted, deleteTo
 
                 <button onClick={handleTodoCompleted} className={`${styles.todoItemCheck} ${completed}`}><Check/> </button>
                 <p>{todoText}</p>
-                <button type='button' onClick={()=>deleteTodoItem(todoText)}>
+                <button type='button' className={styles.deleteTodo} onClick={()=>deleteTodoItem(todoText)}>
                     <Trash size={24}/>
                 </button>
                 

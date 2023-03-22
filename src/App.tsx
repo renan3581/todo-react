@@ -35,7 +35,6 @@ function App() {
 }
 
     
-    console.log(todoList.length)
   return (
     <>
       

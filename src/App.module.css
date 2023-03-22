@@ -59,7 +59,7 @@ form textarea {
 textarea::placeholder{
   position: relative;
   top: 5px;
-  font-size: 18px;
+  font-size: 1.125rem;
   align-self: center;
   justify-self:center;
 }
@@ -148,4 +148,28 @@ form button{
 
 .nothingTodo strong{
   color: var(--text-input-user);
+}
+
+
+@media (max-width: 678px) {
+
+  .todo{
+    width: 95%;
+    margin: 50px auto 0; 
+  }
+
+  .todoItemsList { 
+    width: 100%;
+  }
+
+  .todoHeader{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    gap: 0.5rem;
+  }
+
+  form{
+    width: 95%;
+  }
 }

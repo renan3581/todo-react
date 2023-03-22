@@ -1,7 +1,8 @@
 .todoItem{
     display: grid;
-    align-items: center;
-    grid-template-columns: 30px 1fr 50px;
+    grid-template-columns: 40px 1fr 50px;
+    grid-template-areas: 'btnCheck text  btnDelete' ;
+    align-content: center;
     min-height: 4.5rem;
     padding: 1rem .625rem;
     border: 1px solid var(--bg-counter);
@@ -15,8 +16,10 @@
 
 .todoItem p{
     display: flex;
-    flex: 1;
+    align-items: center;
+    justify-self: flex-start;
     word-wrap: break-word;  
+    grid-area: text;
 }
 
 .todoItem .todoItemCheck{
@@ -27,8 +30,10 @@
     height: 24px;
     border: 1px solid #4EA8DE;
     border-radius: 9999px ;
+    background-color: transparent;
     cursor: pointer;
     color: transparent;
+    grid-area: btnCheck;
 }
 
 
@@ -39,15 +44,34 @@
 
 }
 
-.todoItem button{
+.todoItem .deleteTodo{
+    justify-self: flex-end ;
     background-color: transparent;
+    width: fit-content;
     border: none;
     color: var(--text-input-placeholder);
     cursor: pointer ;
+    grid-area: btnDelete;
 }
 
 .todoItem button:hover{
     background-color: transparent;
     border: none;
     color: var(--delete-hover);
+}
+
+@media (max-width: 767px) {
+    .todoItem{
+        width: 95%;
+        margin: 0 auto;
+        justify-content: flex-start;
+        grid-template-columns: 1fr 50px;
+        grid-template-areas: ' text btnDelete'
+                             ' text btnCheck';  
+
+    }
+
+    .todoItem .todoItemCheck{
+        justify-self: flex-end;
+    }
 }
